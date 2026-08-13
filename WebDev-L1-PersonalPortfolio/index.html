@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menna Ali | Frontend Developer &amp; ML Engineer</title>
+  <meta name="description" content="Menna Ali Abdelrahman - Frontend Developer and Machine Learning Engineer Portfolio.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- grain overlay for texture -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Menna<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link" data-nav="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-nav="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-nav="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-nav="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="#contact" class="nav-button">Let's talk</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+
+        <div class="hero-text" data-reveal>
+          <span class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Cairo, Egypt — Open to work
+          </span>
+
+          <h1>I turn signal<br>into <em>meaning.</em></h1>
+
+          <p class="hero-role">
+            Currently working as a
+            <span class="role-rotator"><span class="role-text" id="roleText">Frontend Developer</span></span>
+          </p>
+
+          <p class="hero-desc">
+            CS &amp; AI graduate from Helwan University. I build interfaces
+            people trust and models that turn raw signal — pixels, gestures,
+            language — into something a machine can act on.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="primary-button">View my work</a>
+            <a href="#contact" class="secondary-button">Let's connect</a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/menna-ali-485ab9312/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="arrow">↗</span></a>
+            <a href="https://github.com/Mennaali30" target="_blank" rel="noopener noreferrer">GitHub <span class="arrow">↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="visual-card">
+            <div class="hero-image">
+              <img src="images/profile.jpeg" alt="Menna Ali">
+              <canvas id="landmarkCanvas" class="landmark-canvas"></canvas>
+            </div>
+            <div class="visual-footer">
+              <span class="code-label">TRACKING · 21 LANDMARKS</span>
+              <span class="code-label code-label-live"><span class="live-dot"></span>LIVE</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-one">React</div>
+          <div class="floating-badge badge-two">Python</div>
+          <div class="floating-badge badge-three">PyTorch</div>
+        </div>
+
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span></span>
+        scroll
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about section">
+      <div class="container">
+
+        <div class="section-heading" data-reveal>
+          <span class="section-label">01 — About</span>
+          <h2>Where <em>interface</em> meets <em>intelligence.</em></h2>
+        </div>
+
+        <div class="about-content">
+          <div class="about-intro" data-reveal>
+            <p class="large-text">
+              I enjoy turning ideas into clean, functional,
+              and meaningful digital experiences.
+            </p>
+
+            <div class="stat-readout">
+              <div class="stat">
+                <span class="stat-value">2026</span>
+                <span class="stat-label">Graduate</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">CS &amp; AI</span>
+                <span class="stat-label">Helwan University</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">2</span>
+                <span class="stat-label">Focus tracks</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text" data-reveal>
+            <p>
+              I'm a Computer Science and Artificial Intelligence
+              graduate from Helwan University with a strong
+              interest in frontend development and artificial
+              intelligence.
+            </p>
+            <p>
+              My work combines modern web technologies such as
+              React and Next.js with machine learning, deep
+              learning, computer vision, and NLP to build
+              practical and user-focused solutions.
+            </p>
+            <p>
+              I'm continuously developing my skills and looking
+              for opportunities where I can contribute,
+              learn, and build impactful products.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="skills section">
+      <div class="container">
+
+        <div class="section-heading" data-reveal>
+          <span class="section-label">02 — Skills</span>
+          <h2>Tools I use to <em>build.</em></h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category" data-reveal>
+            <span class="skill-number">FE</span>
+            <h3>Frontend Development</h3>
+            <div class="skill-list">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>React.js</span>
+              <span>Next.js</span>
+              <span>Tailwind CSS</span>
+              <span>REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-reveal>
+            <span class="skill-number">ML</span>
+            <h3>AI &amp; Machine Learning</h3>
+            <div class="skill-list">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Deep Learning</span>
+              <span>Computer Vision</span>
+              <span>NLP</span>
+              <span>PyTorch</span>
+              <span>Transformers</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-reveal>
+            <span class="skill-number">TL</span>
+            <h3>Tools &amp; Technologies</h3>
+            <div class="skill-list">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>MediaPipe</span>
+              <span>SentencePiece</span>
+              <span>Streamlit</span>
+              <span>SQL</span>
+              <span>Linux</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="projects section">
+      <div class="container">
+
+        <div class="section-heading" data-reveal>
+          <span class="section-label">03 — Selected work</span>
+          <h2>Projects I've <em>built.</em></h2>
+          <p>A selection of my work across Artificial Intelligence, Machine Learning, and Frontend Development.</p>
+        </div>
+
+        <div class="project-filters" data-reveal role="tablist" aria-label="Filter projects">
+          <button class="filter-btn is-active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="ai" type="button">AI / ML</button>
+          <button class="filter-btn" data-filter="frontend" type="button">Frontend</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 - Wasla -->
+          <article class="project-card" data-category="ai" data-reveal>
+            <div class="project-top">
+              <span class="project-number">01</span>
+              <span class="project-type">AI / Computer Vision</span>
+            </div>
+            <h3>Wasla</h3>
+            <p>
+              A real-time Egyptian Sign Language recognition system
+              that translates signs into text using MediaPipe,
+              facial emotion detection, and a lightweight deep
+              learning classifier.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>MediaPipe</span>
+              <span>Deep Learning</span>
+              <span>Computer Vision</span>
+            </div>
+            <a href="https://www.linkedin.com/posts/menna-ali-485ab9312_wasla-graduation-computerscience-activity-7473482820712214528-WxEz?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-KkmUBebKv8Lu7RuF2dlZaSd_J2w_2vgA" class="project-link" target="_blank">View project <span class="arrow">↗</span></a>
+          </article>
+
+          <!-- Project 2 - E-Commerce -->
+          <article class="project-card" data-category="frontend" data-reveal>
+            <div class="project-top">
+              <span class="project-number">02</span>
+              <span class="project-type">Frontend Development</span>
+            </div>
+            <h3>E-Commerce Website</h3>
+            <p>
+              A responsive e-commerce website built with Next.js,
+              featuring product browsing, user authentication,
+              and REST API integration for a smooth shopping
+              experience.
+            </p>
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>JavaScript</span>
+              <span>REST API</span>
+              <span>JWT</span>
+            </div>
+            <a href="https://www.linkedin.com/posts/menna-ali-485ab9312_nextjs-ecommerce-webdevelopment-activity-7418288437356814336-WFMY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-KkmUBebKv8Lu7RuF2dlZaSd_J2w_2vgA" class="project-link" target="_blank">View project <span class="arrow">↗</span></a>
+          </article>
+
+          <!-- Project 3 - University landing page -->
+          <article class="project-card" data-category="frontend" data-reveal>
+            <div class="project-top">
+              <span class="project-number">03</span>
+              <span class="project-type">React / Frontend</span>
+            </div>
+            <h3>University Landing Page</h3>
+            <p>
+              A fully responsive university landing page built
+              with React, featuring component-based architecture,
+              smooth navigation, interactive sections, and
+              contact form integration using Web3Forms API.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+              <span>Web3Forms API</span>
+            </div>
+            <a href="https://www.linkedin.com/posts/menna-ali-485ab9312_reactjs-frontenddevelopment-webdevelopment-activity-7428584336280408064-nVuO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-KkmUBebKv8Lu7RuF2dlZaSd_J2w_2vgA" class="project-link" target="_blank">View project <span class="arrow">↗</span></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact section">
+      <div class="container contact-content">
+
+        <div data-reveal>
+          <span class="section-label">04 — Get in touch</span>
+          <h2>Let's build something <em>meaningful.</em></h2>
+        </div>
+
+        <div class="contact-info" data-reveal>
+          <a href="mailto:mennaali30617@gmail.com">mennaali30617@gmail.com</a>
+          <a href="https://www.linkedin.com/in/menna-ali-485ab9312/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="arrow">↗</span></a>
+          <a href="https://github.com/Mennaali30" target="_blank" rel="noopener noreferrer">GitHub <span class="arrow">↗</span></a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#home" class="logo">Menna<span>.</span></a>
+      <p>Frontend Developer &amp; Machine Learning Engineer</p>
+      <p>© 2026 Menna Ali Abdelrahman</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
